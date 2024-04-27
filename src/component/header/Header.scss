@@ -1,0 +1,27 @@
+.header-container{
+    display: flex;
+
+    padding: 30px;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    margin-bottom: 20px;
+    a{
+        font-size: 25px;
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+    }
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        list-style: none;
+        
+        a{
+            font-weight: 200;
+            color: rgb(57, 57, 57);
+        }
+    }
+}
