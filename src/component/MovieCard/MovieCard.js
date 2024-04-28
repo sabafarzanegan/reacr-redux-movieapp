@@ -1,13 +1,19 @@
 import React from 'react'
+import "./MovieCard.scss"
 
-function MovieCard() {
+function MovieCard(props) {
+  const {data}=props
+  
   return (
   <>
-  <div class="card" style={{width:"18rem"}}>
-  <img style={{maxWidth:"18rem"}} src="https://sabzlearn.ir/wp-content/uploads/2023/12/ezgif.com-jpg-to-webp-converted-16-1-768x432.webp" class="card-img-top" alt="..."/>
+  <div class="card" style={{width:"18rem",maxHeight:"45rem"}}>
+  <img style={{maxWidth:"18rem"}} src={data.Poster} class="card-img-top" alt="..."/>
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <h5 class="card-title">{data.Title}</h5>
+    <div className='detailcontainer'>
+      <p className='yearmovie'>{data.Year}</p>
+      <p className='typemovie'>{data.Type}</p>
+    </div>
     <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>
